@@ -1,16 +1,17 @@
 
 public abstract class Person{
 
-	public  String name;
+	public String name;
 	public int  total;
 
 	public abstract boolean wantToHit();
 
-	public void getCard() {
+	public int getCard() {
 		int card = 2 + (int)(Math.random() * ((12 - 2) + 1));
-		System.out.println(name + " draw : " + card);
+		System.out.println(card);
 		total += card;
-		System.out.println(name + " sum is : " + total);
+		System.out.println(total);
+		return card;
 	}	
 
 	public int getTotal() {
@@ -19,10 +20,7 @@ public abstract class Person{
 	}
 
 	public String getName() {
-		// TODO Auto-generated method stub
 		return name;
 	}
-
-
 
 }
