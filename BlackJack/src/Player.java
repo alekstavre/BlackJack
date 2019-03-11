@@ -15,16 +15,16 @@ public class Player extends Person{
 
 		System.out.print("hit or hold ?");
 
-		String choice = input.next(); 
-
-		if (choice.equals("hit")){
-			return true;
-			
-		}else if(choice.equals("hold")) {
-			return false;
-		}
-		
-		return false;
+		while(true) {
+	            String choice = input.next();
+	            if (choice.equals("hit")) {
+	                return true;
+	            } else if (choice.equals("hold")) {
+	                return false;
+	            } else {
+	                System.out.print("Type \"hit\" or \"stay\": ");
+	            }
+	        }
 	}
 
 }

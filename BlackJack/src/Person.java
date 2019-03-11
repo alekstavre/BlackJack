@@ -8,9 +8,9 @@ public abstract class Person{
 
 	public int getCard() {
 		int card = 2 + (int)(Math.random() * ((12 - 2) + 1));
-		System.out.println(card);
+		System.out.println("drew the card: " + card);
 		total += card;
-		System.out.println(total);
+		System.out.println("the total is : " + total);
 		return card;
 	}	
 
