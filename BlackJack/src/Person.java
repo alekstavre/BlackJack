@@ -10,7 +10,7 @@ public abstract class Person{
 		int card = 2 + (int)(Math.random() * ((12 - 2) + 1));
 		System.out.println("drew the card: " + card);
 		total += card;
-		System.out.println("the total is : " + total);
+		System.out.println("his total is : " + total);
 		return card;
 	}	
 
